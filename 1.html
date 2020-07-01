@@ -1,0 +1,184 @@
+<!-- <!DOCTYPE html>
+<html ng-app="myModule">
+
+<head>
+  <title>Document</title>
+  <script src="angular.js"></script>
+  <script src="Script.js"></script>
+  <style>
+    body {
+      font-family:Arial, Helvetica, sans-serif
+    }
+  </style>
+</head>
+
+<body>
+   <table>
+    <thead>
+      <th>Name</th>
+      <th>Likes</th>
+      <th>Dislikes</th>
+      <th>Opinion</th>
+      <th>Like/Dislike</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="tech in technologies">
+        <td>{{tech.name}}</td>
+        <td>{{tech.likes}}</td>
+        <td>{{tech.dislikes}}</td>
+        <td>{{tech.avg}}</td>
+        <td>
+          <input type="button" value="Like" ng-click="incrementLikes(tech)" />
+          <input type="button" value="Disike" ng-click="incrementDisikes(tech)" />
+
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+  <!-- Rows to Display: <input type="number" min="0" max="5" ng-model="rowList" />
+  <br>
+  <br>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>DOB</th>
+      <th>GENDER</th>
+      <th>SALARY (number)</th>
+      <th>SALARY (currency)</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="emp in employees | limitTo:rowList">
+        <td>{{emp.name | uppercase}}</td>
+        <td>{{emp.dateOfBirth | date:"dd/MM/yyyy"}}</td>
+        <td>{{emp.gender | lowercase}}</td>
+        <td>{{emp.salary | number:2}}</td>
+        <td>{{emp.salary | currency:"€"}}</td>
+      </tr>
+    </tbody>
+  </table> -->
+  <!-- <div ng-controller="myController">
+    <div ng-include="employeeView"></div>
+  </div> -->
+  <!-- <div>
+      <input type="text" ng-model="employee.firstName" />
+    </div>
+    <div>
+      <input type="text" ng-model="employee.lastName" />
+    </div>
+    <div>
+      <input type="text" ng-model="employee.department" />
+    </div>
+    
+    <div>
+      {{employee.firstName}}
+    </div>
+    <div>
+      {{employee.lastName}}
+    </div>
+    <div>
+        <img ng-src="{{employee.flag}}" 
+        alt="{{employee.flag + 'flag'}}" 
+        style="height:100px; width:200px" />
+    </div> 
+    <div>
+      {{employee.department}}
+    </div> -->
+<!-- </body>
+
+</html>
+ --> 
+
+
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title>Document</title>
+    <script src="angular.js"></script>
+    <script src="script.js"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <div ng-controller="myController">
+        Select View:
+        <select ng-model="employeeView">
+            <option value="EmployeeTable.html">Employee</option>
+            <option value="EmptyView.html">Empty</option>
+            
+        </select>
+        <div ng-include="employeeView"></div>
+    </div>
+    <!-- Rows to Display<input type="number" min="0" max="5" ng-model="rowList"/>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Salary (number)</th>
+                <th>Salary (currency)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in employees | limitTo:rowList" >
+                <td>{{emp.name | uppercase}}</td>
+                <td>{{emp.dateOfBirth | date:"dd/MM/yyyy"}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.salary}}</td> -->
+                
+                <!-- <td>
+                    <input type="button" value="Like" ng-click="incrementLikes(tech)"/>
+                    <input type="button" value="Dislike" ng-click="incrementDislikes(tech)"/>
+
+                </td> -->
+            <!-- </tr>
+        </tbody>
+    </table> -->
+    <!-- <div>
+        <input type="text" ng-model="employee.firstName"/>
+    </div>
+    <div>
+        <input type="text" ng-model="employee.lastName"/>
+    </div>
+    <div>
+        <input type="text" ng-model="employee.Department"/>
+    </div>
+    
+    <div>
+        {{employee.firstName}}
+    </div>
+    <div>
+        {{employee.lastName}}
+    </div>
+    <div>
+        {{employee.Department}}
+         <img ng-src="{{employee.flag}}"
+        alt="{{employee.flag+'flag'}}"
+        style="height: 100px;" width="200px"/> -->
+   <!-- // </div>
+     -->
+    
+    
+    <!-- <img src="images/Flag_of_the_United_States.svg" style="height:100px" /> -->
+    
+    
+    <!-- {{employee.firstName}}
+    {{employee.lastName}}
+    {{employee.Department}} -->
+    <!-- <input type="text" ng-model="name" />
+    {{name}} -->
+    <!-- <div>
+        10+20={{10+20}}
+    </div>
+    <div>
+        {{[1,2,3,4,5,6][3]}}
+    </div> -->
+</body>
+</html>
